@@ -4,6 +4,8 @@ import Swap from "../pages/swap/Swap";
 import Dashboard from "../pages/dashboard";
 import About from "../pages/about";
 import Liquidity from "../pages/liquidity";
+import Tokens from "../pages/Tokens/tokens";
+import PoolsPage from "../pages/Pools";
 
 // Add your routes here.
 // Use Link element from react-router to navigate to specific url. --see src/pages/Home/index.jsx (Swap Link)
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
         element: <Swap />,
       },
       {
+        path: "/pools", // Url to render the component in element property.
+        element: <PoolsPage />,
+      },
+      {
         path: "/dashboard", // Url to render the component in element property.
         element: <Dashboard />,
       },
@@ -28,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/about", // Url to render the component in element property.
         element: <About />,
+      },
+      {
+        path: "/tokens", // Url to render the component in element property.
+        element: <Tokens />,
       },
 
       {

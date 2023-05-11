@@ -20,12 +20,8 @@ function Home() {
 
 
 return (
-
   <div className="home">
- 
   <DashTopNav/>
-
-  
 
 <Center>
 
